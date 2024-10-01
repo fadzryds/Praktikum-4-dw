@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billiard 88</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Waiting List Billiard</h1>
+        <input type="text" id="task-input" placeholder="Enter a new task">
+        <button id="add-task-btn">Add Task</button>
+
+        <h3>Daftar Meja</h3>
+        <div class="filter-buttons">
+            <button class="btn-all" onclick="filterTasks('all')">All</button>
+            <button class="btn-active" onclick="filterTasks('active')">Ready</button>
+            <button class="btn-complete" onclick="filterTasks('completed')">Used</button>
+        </div>
+
+        <ul id="task-list">
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
